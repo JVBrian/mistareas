@@ -11,7 +11,7 @@ import { useTasksStore } from "@/app/stores/useTasksStore";
 
 export function SearchButton() {
   const [searchTerm, setSearchTerm] = useState("");
-  const { tasks, allTasks, setTasks } = useTasksStore();
+  const { allTasks, setTasks } = useTasksStore();
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const term = event.target.value.toLowerCase();
